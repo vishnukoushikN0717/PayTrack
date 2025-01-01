@@ -48,16 +48,6 @@
 - **Advanced Analytics and Insights**  
   - AI-driven financial reports and savings recommendations.  
   - Monthly budget overviews and data visualizations.  
-
-- **Predictive Analytics**  
-  - Forecast spending patterns and suggest proactive budget adjustments.  
-
-- **Mobile App Expansion**  
-  - Develop iOS and Android versions for seamless financial management on the go.  
-
-- **Multi-Currency Support**  
-  - Enable users to track and manage finances across different currencies.  
-
 ---
 
 ## 📅 **What's Next?**  
