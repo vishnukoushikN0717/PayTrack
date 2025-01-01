@@ -1,0 +1,58 @@
+import type { MarketPrice } from '../types';
+
+export const INITIAL_MARKET_DATA: MarketPrice[] = [
+  {
+    id: '1',
+    name: 'Gold (24K)',
+    category: 'Precious Metals',
+    currentPrice: 62450,
+    previousPrice: 62100,
+    unit: 'gram',
+    lastUpdated: new Date().toISOString(),
+  },
+  {
+    id: '2',
+    name: 'Silver',
+    category: 'Precious Metals',
+    currentPrice: 745,
+    previousPrice: 752,
+    unit: 'gram',
+    lastUpdated: new Date().toISOString(),
+  },
+  {
+    id: '3',
+    name: 'Tomatoes',
+    category: 'Vegetables',
+    currentPrice: 40,
+    previousPrice: 45,
+    unit: 'kg',
+    lastUpdated: new Date().toISOString(),
+  },
+  {
+    id: '4',
+    name: 'Onions',
+    category: 'Vegetables',
+    currentPrice: 35,
+    previousPrice: 32,
+    unit: 'kg',
+    lastUpdated: new Date().toISOString(),
+  },
+  {
+    id: '5',
+    name: 'Petrol',
+    category: 'Fuel',
+    currentPrice: 102.50,
+    previousPrice: 102.50,
+    unit: 'litre',
+    lastUpdated: new Date().toISOString(),
+  },
+  {
+    id: '6',
+    name: 'Diesel',
+    category: 'Fuel',
+    currentPrice: 88.75,
+    previousPrice: 88.75,
+    unit: 'litre',
+    lastUpdated: new Date().toISOString(),
+  },
+];

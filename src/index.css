@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  body,
+  html {
+    @apply h-full;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Allows scrolling only if needed */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@layer components {
+  .gradient-card {
+    @apply bg-gradient-to-br from-white to-gray-50 hover:from-gray-50 hover:to-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .page-layout {
+    @apply flex flex-col min-h-screen;
+  }
+
+  .content {
+    @apply flex-1;
+  }
+
+  header,
+  footer {
+    @apply flex-none;
+    /* Prevent headers/footers from stretching */
+  }
+
+  .nav-gradient {
+    @apply bg-gradient-to-r from-primary-700 to-primary-600;
+  }
+
+  .timeline-dot {
+    @apply absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 animate-pulse;
+  }
+
+  .chat-gradient {
+    @apply bg-gradient-to-br from-primary-50 to-gray-50;
+  }
+
+  .price-card {
+    @apply bg-gradient-to-br from-white to-gray-50 hover:from-primary-50 hover:to-white transition-all duration-300;
+  }
+
+  /* Animations */
+  .slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,178 @@
+/* FinanceAi.css */
+.finance-ai {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, black, #1a202c, #2d3748);
+    min-height: 100vh;
+    padding: 2rem;
+    color: #e2e8f0;
+}
+
+.bg-white {
+    background: linear-gradient(135deg, #2d3748, #4a5568);
+    color: #edf2f7;
+}
+
+.text-primary-600 {
+    color: #edf2f7;
+}
+
+.border-b {
+    border-bottom: 1px solid #4a5568;
+}
+
+.border-t {
+    border-top: 1px solid #4a5568;
+}
+
+.h-[600px] {
+    height: 600px;
+}
+
+.rounded-lg {
+    border-radius: 15px;
+}
+
+.shadow-sm {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #4a5568 #2d3748;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    width: 8px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: #2d3748;
+    border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 10px;
+}
+
+.text-gray-500 {
+    color: #cbd5e0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Chat Message Styling */
+.chat-message {
+    background: linear-gradient(135deg, #2d3748, #4a5568);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.chat-message:hover {
+    transform: scale(1.02);
+}
+
+.chat-message.bot {
+    background: linear-gradient(135deg, #2c5282, #2d3748);
+}
+
+/* Input Area Styling */
+.input-area {
+    background: linear-gradient(135deg, #2d3748, #4a5568);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+input[type="text"],
+textarea {
+    background: #1a202c;
+    border: 1px solid #4a5568;
+    color: #edf2f7;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2c5282;
+    box-shadow: 0 0 0 2px rgba(44, 82, 130, 0.2);
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #2c5282, #2d3748);
+    color: #edf2f7;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3182ce, #2c5282);
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #4a5568;
+    cursor: not-allowed;
+}
+
+/* Header Styling */
+.p-4.border-b {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    padding: 1.5rem;
+}
+
+.text-xl.font-semibold {
+    color: #edf2f7;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Loading Animation */
+.text-center.text-gray-500.text-sm {
+    color: #cbd5e0;
+    font-size: 0.875rem;
+    padding: 1rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+Icon Animation .w-6.h-6.text-primary-600 {
+    animation: icon-spin 4s linear infinite;
+}
+
+@keyframes icon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

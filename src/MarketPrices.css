@@ -1,0 +1,79 @@
+/* Page Background */
+.market-page {
+    background: linear-gradient(to bottom, black, #1a202c, #2d3748);
+    min-height: 100vh;
+    padding: 2rem;
+    color: #e2e8f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f8f9fa;
+    margin-bottom: 1rem;
+}
+
+/* Category Filter */
+.category-filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.category-filter select {
+    background-color: #2d3748;
+    color: #edf2f7;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-filter select:hover {
+    background-color: #4a5568;
+    color: #e2e8f0;
+}
+
+/* Price Card */
+.price-card {
+    background: linear-gradient(135deg, #2d3748, #4a5568);
+    color: #edf2f7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Market Resources */
+.market-resources {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    color: #edf2f7;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Text */
+.text-gray-300 {
+    color: #cbd5e0;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}

@@ -1,0 +1,169 @@
+/* Page Background */
+.history-page {
+    background: linear-gradient(to bottom, black, #1a202c, #2d3748);
+    min-height: 100vh;
+    padding: 2rem;
+    color: #e2e8f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #edf2f7;
+    animation: icon-spin 4s linear infinite;
+}
+
+.header-title {
+    font-size: 3rem;
+    /* Larger font size for emphasis */
+    font-weight: bold;
+    color: #f8f9fa;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 1rem;
+    width: 90%;
+    max-width: 600px;
+}
+
+.search-icon {
+    color: #6b7280;
+    margin-right: 0.5rem;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    color: #2d3748;
+}
+
+/* Card Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+/* Individual Cards */
+.card {
+    background: linear-gradient(135deg, #2d3748, #4a5568);
+    color: #edf2f7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-year {
+    background: #2c5282;
+    color: #edf2f7;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+/* Card Description */
+.card-description {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+/* Card Link */
+.card-link {
+    display: inline-block;
+    color: #f7fafc;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(135deg, #2d3748, #1a202c);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-link:hover {
+    background: linear-gradient(135deg, #edf2f7, #718096);
+    transform: translateY(-2px);
+}
+
+/* No Results Message */
+.no-results {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #cbd5e0;
+    margin-top: 2rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+.page-button {
+    background: #2d3748;
+    color: #edf2f7;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.page-button:hover {
+    background-color: #4a5568;
+    transform: translateY(-2px);
+}
+
+.page-button.active {
+    background: #2c5282;
+    font-weight: bold;
+    color: #edf2f7;
+}
