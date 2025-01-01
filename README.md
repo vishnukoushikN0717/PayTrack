@@ -33,7 +33,6 @@
 
 ## 🛠️ **Tech Stack**  
 - **Frontend**: TypeScript, JavaScript, HTML, Tailwind CSS  
-- **Backend**: Node.js, Supabase  
 - **AI Integration**: Gemini API for financial insights  
 - **APIs**: Market data integration for real-time price updates  
 
